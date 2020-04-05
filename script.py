@@ -1,9 +1,10 @@
 import csv
 
+# pip install GitPython
 import git
 import yaml
 
-git.Git(".").clone("https://github.com/snakemake/snakemake-wrappers")
+git.Git(".").clone("https://github.com/snakemake/snakemake-wrappers.git")
 
 import os
 import shutil

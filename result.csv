@@ -1,14 +1,4 @@
 name,description,authors,input_args,input_named_args,output_args,output_named_args,param_args,param_named_args
-faToTwoBit,"Convert *.fa file to *.2bit file (see http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/FOOTER.txt)
-",Roman Cherniatchik,0,0,0,0,0,0
-twoBitInfo,"Generate *.chorom.sizes file by *.2bit file (see http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/FOOTER.txt)
-",Roman Cherniatchik,0,0,0,0,0,0
-twoBitToFa,"Convert *.2bit file to *.fa file (see http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/FOOTER.txt)
-",Roman Cherniatchik,0,0,0,0,0,0
-bedGraphToBigWig,"Convert *.bedGraph file to *.bw file (see http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/FOOTER.txt)
-",Roman Cherniatchik,0,0,0,0,0,0
-infernal cmpress,"Starting from a CM database <cmfile> in standard Infernal-1.1 format, construct binary compressed datafiles for cmscan. Infernal ('INFERence of RNA ALignment') is for searching DNA sequence databases for RNA structure and sequence similarities. It is an implementation of a special case of profile stochastic context-free grammars called covariance models (CMs). A CM is like a sequence profile, but it scores a combination of sequence consensus and RNA secondary structure consensus, so in many cases, it is more capable of identifying RNA homologs that conserve their secondary structure more than their primary sequence.",N. Tessa Pierce,0,0,0,0,0,0
-infernal cmscan,"cmscan is used to search sequences against collections of covariance models that have been prepared with cmpress. The output format is designed to be human-            readable, but is often so voluminous that reading it is impractical, and parsing it is a pain. The --tblout option saves output in a simple tabular  format that is concise and easier to parse. The -o option allows redirecting the main output, including throwing it away in /dev/null. Infernal ('INFERence of RNA ALignment') is for searching DNA sequence databases for RNA structure and sequence similarities. It is an implementation of a special case of profile stochastic context-free grammars called covariance models (CMs). A CM is like a sequence profile, but it scores a combination of sequence consensus and RNA secondary structure consensus, so in many cases, it is more capable of identifying RNA homologs that conserve their secondary structure more than their primary sequence.",N. Tessa Pierce,0,0,0,0,0,0
 fastq_screen,"`fastq_screen <http://www.bioinformatics.babraham.ac.uk/projects/fastq_screen>`_
 screens a library of sequences in FASTQ format against a set of sequence
 databases so you can see if the composition of the library matches with what
@@ -46,16 +36,12 @@ respectively. Furthermore, `params.extra` can be used to pass additional
 arguments verbatim to ``fastq_screen``, for example ``extra=""--illumina1_3""`` or
 ``extra=""--bowtie2 '--trim5=8'""``.
 ",Ryan Dale,0,0,0,0,0,0
-tabix,"Process given file with tabix (e.g., create index).",Johannes Köster,0,0,0,0,0,0
-arriba,Detect gene fusions from chimeric STAR output,Jan Forster,0,0,0,0,0,0
 picard SortSam,"Sort sam/bam files using picard tools.
 ",Julian de Ruiter,0,0,0,0,0,0
 picard CollectHSMetrics,"Collects hybrid-selection (HS) metrics for a SAM or BAM file using picard.
 ",Julian de Ruiter,0,0,0,0,0,0
 picard CollectInsertSizeMetrics,"Collect metrics on insert size of paired end reads with picard tools.
 ",Johannes Köster,0,0,0,0,0,0
-picard CollectTargetedPcrMetrics,"Collect metric information for target pcr metrics runs, with picard tools.
-",Patrik Smeds,0,0,0,0,0,0
 picard SomToFastq,"Converts a SAM or BAM file to FASTQ.
 ",Patrik Smeds,0,0,0,0,0,0
 picard CreateSequenceDictionary,"Create a .dict file for a given FASTA file
@@ -71,105 +57,49 @@ picard MarkDuplicates,"Mark PCR and optical duplicates with picard tools.
 ",Johannes Köster,0,0,0,0,0,0
 picard MergeSamFiles,"Merge sam/bam files using picard tools.
 ",Julian de Ruiter,0,0,0,0,0,0
-pear,"PEAR is an ultrafast, memory-efficient and highly accurate pair-end read merger",N. Tessa Pierce,0,0,0,0,0,0
-igv-reports,Create self-contained igv.js HTML pages.,Johannes Köster,0,0,0,0,0,0
-tximport,"Import and summarize transcript-level estimates for both transcript-level
-and gene-level analysis.
-",Thibault Dayris,0,0,0,0,0,0
-lastal,"LAST finds similar regions between sequences, and aligns them. It is designed for comparing large datasets to each other (e.g. vertebrate genomes and/or large numbers of DNA reads)",N. Tessa Pierce,0,0,0,0,0,0
-lastdb,"LAST finds similar regions between sequences, and aligns them. It is designed for comparing large datasets to each other (e.g. vertebrate genomes and/or large numbers of DNA reads)",N. Tessa Pierce,0,0,0,0,0,0
-pre.py,Preprocessing/normalisation of vcf/bcf files. Part of the hap.py suite by Illumina (see https://github.com/Illumina/hap.py/blob/master/doc/normalisation.md).,Jan Forster,0,0,0,0,0,0
 trinity,"Generate transcriptome assembly with Trinity
 ",Tessa Pierce,0,0,0,0,0,0
 cutadapt-se,"Trim single-end reads using cutadapt.
 ",Julian de Ruiter,0,0,0,0,0,0
 cutadapt-pe,"Trim paired-end reads using cutadapt.
-",Julian de Ruiter David Laehnemann,0,0,0,0,0,0
+",Julian de Ruiter,0,0,0,0,0,0
 multiqc,"Generate qc report using multiqc.
 ",Julian de Ruiter,0,0,0,0,0,0
 bowtie2,Map reads with bowtie2.,Johannes Köster,0,0,0,0,0,0
-hisat2 align,"Map reads with hisat2.
+hisat2,"Map reads with hisat2.
 ",Wibowo Arindrarto,0,0,0,0,0,0
-hisat2 index,"Create index with hisat2.
-",Joël Simoneau,0,0,0,0,0,0
-nanosim-h,"NanoSim-H is a simulator of Oxford Nanopore reads that captures the technology-specific features of ONT data, and allows for adjustments upon improvement of Nanopore sequencing technology.",Michael Hall,0,0,0,0,0,0
-primerclip,"Primer trimming on sam file, https://github.com/swiftbiosciences/primerclip
-",Patrik Smeds,0,0,0,0,0,0
 vcftools filter,Filter vcf files using vcftools,Patrik Smeds,0,0,0,0,0,0
 art_profiler_illumina,Use the art profiler to create a base quality score profile for Illumina read data from a fastq file.,David Laehnemann Victoria Sack,0,0,0,0,0,0
-MSIsensor msi,Score your MSI with MSIsensor,,0,0,0,0,0,0
-MSIsensor Scan,Scan homopolymers and microsatelites with MSIsensor,,0,0,0,0,0,0
 bcftools concat,Concatenate vcf/bcf files with bcftools.,Johannes Köster,0,0,0,0,0,0
 bcftools merge,Merge vcf/bcf files with bcftools.,Patrik Smeds,0,0,0,0,0,0
-bcftools reheader,Change header or sample names of vcf/bcf file.,Jan Forster,0,0,0,0,0,0
-bcftools norm,"Left-align and normalize indels, check if REF alleles match the reference, split multiallelic sites into multiple rows; recover multiallelics from multiple rows.",Dayne Filer,0,0,0,0,0,0
 bcftools call,Call variants with bcftools.,Johannes Köster,0,0,0,0,0,0
 bcftools view,View vcf/bcf file in a different format.,Johannes Köster,0,0,0,0,0,0
-bcftools index,Index vcf/bcf file.,Jan Forster,0,0,0,0,0,0
 sickle se,Trim single-end reads with sickle.,Wibowo Arindrarto,0,0,0,0,0,0
 sickle pe,Trim paired-end reads with sickle.,Wibowo Arindrarto,0,0,0,0,0,0
-transdecoder predict,Predict the likely coding regions from the ORFs identified by Transdecoder.LongOrfs. Optionally include results from homology searches (blast/hmmer results) as ORF retention criteria.,N. Tessa Pierce,0,0,0,0,0,0
-transdecoder longorfs,"TransDecoder.LongOrfs will identify coding regions within transcript sequences (ORFs) that are at least 100 amino acids long. You can lower this via the '-m' parameter, but know that the rate of false positive ORF predictions increases drastically with shorter minimum length criteria.",N. Tessa Pierce,0,0,0,0,0,0
-umis bamtag,Convert a BAM/SAM with fastqtransformed read names to have UMI and,Patrik Smeds,0,0,0,0,0,0
-bismark2summary,"Generate summary graphical HTML report from several Bismark text report files reports (see https://github.com/FelixKrueger/Bismark/blob/master/bismark2summary).
-",Roman Cherniatchik,0,0,0,0,0,0
-bam2nuc,"Calculate mono- and di-nucleotide coverage of the reads and compares them with average genomic sequence
-composition (see https://github.com/FelixKrueger/Bismark/blob/master/bam2nuc).
-",Roman Cherniatchik,0,0,0,0,0,0
-bismark,"Align BS-Seq reads using Bismark (see https://github.com/FelixKrueger/Bismark/blob/master/bismark).
-",Roman Cherniatchik,0,0,0,0,0,0
-bismark2bedGraph,"Generate bedGraph and coverage files from positional methylation files created by bismark_methylation_extractor (see https://github.com/FelixKrueger/Bismark/blob/master/bismark2bedGraph).
-",Roman Cherniatchik,0,0,0,0,0,0
-bismark2report,"Generate graphical HTML report from Bismark reports (see https://github.com/FelixKrueger/Bismark/blob/master/bismark2report).
-",Roman Cherniatchik,0,0,0,0,0,0
-bismark_genome_preparation,"Generate indexes for Bismark (see https://github.com/FelixKrueger/Bismark/blob/master/bismark_genome_preparation).
-",Roman Cherniatchik,0,0,0,0,0,0
-bismark_methylation_extractor,"Call methylation counts from Bismark alignment results (see https://github.com/FelixKrueger/Bismark/blob/master/bismark_methylation_extractor).
-",Roman Cherniatchik,0,0,0,0,0,0
-deduplicate_bismark,"Deduplicate Bismark Bam Files and saves as *.bam file (see https://github.com/FelixKrueger/Bismark/blob/master/deduplicate_bismark).
-",Roman Cherniatchik,0,0,0,0,0,0
 minimap2 index,creates a minimap2 index,Tom Poorten,0,0,0,0,0,0
 minimap2,A versatile pairwise aligner for genomic and spliced nucleotide sequences https://lh3.github.io/minimap2,Tom Poorten,0,0,0,0,0,0
 fgbio CallMolecularConsensusReads,Calls consensus sequences from reads with the same unique molecular tag.,Patrik Smeds,0,0,0,0,0,0
-fgbio CollectDuplexSeqMetrics,Collects a suite of metrics to QC duplex sequencing data.g.,Patrik Smeds,0,0,0,0,0,0
 fgbio GroupReadsByUmi,Groups reads together that appear to have come from the same original molecule.,Patrik Smeds,0,0,0,0,0,0
 fgbio AnnotateBamWithUmis,"Annotates existing BAM files with UMIs (Unique Molecular Indices, aka Molecular IDs, Molecular barcodes) from a separate FASTQ file.",Patrik Smeds,0,0,0,0,0,0
-fgbio FilterConsensusReads,Filters consensus reads generated by CallMolecularConsensusReads or CallDuplexConsensusReads.,Patrik Smeds,0,0,0,0,0,0
 fgbio SetMateInformation,"Adds and/or fixes mate information on paired-end reads. Sets the MQ (mate mapping quality), MC (mate cigar string), ensures all mate-related flag fields are set correctly, and that the mate reference and mate start position are correct.",Patrik Smeds,0,0,0,0,0,0
-paladin prepare,Download and prepare uniprot refs for paladin mapping. PALADIN is a protein sequence alignment tool designed for the accurate functional characterization of metagenomes.,N. Tessa Pierce,0,0,0,0,0,0
-paladin align,Align nucleotide reads to a protein fasta file (that has been indexed with paladin index). PALADIN is a protein sequence alignment tool designed for the accurate functional characterization of metagenomes.,N. Tessa Pierce,0,0,0,0,0,0
-paladin index,Index a protein fasta file for mapping with paladin. PALADIN is a protein sequence alignment tool designed for the accurate functional characterization of metagenomes.,N. Tessa Pierce,0,0,0,0,0,0
 sambamba sort,Sort bam file with sambamba,Johannes Köster,0,0,0,0,0,0
-varscan mpileup2snp,Detect variants in NGS data from Samtools mpileup,Thibault Dayris,0,0,0,0,0,0
-varscan somatic,Varscan Somatic calls variants and identifies their somatic status (Germline/LOH/Somatic) using pileup files from a matched tumor-normal pair.,Thibault Dayris,0,0,0,0,0,0
-varscan mpileup2indel,Detect indel in NGS data from mpileup files,Thibault Dayris,0,0,0,0,0,0
 busco,"Assess assembly and annotation completeness with BUSCO 
 ",Tessa Pierce,0,0,0,0,0,0
 snpeff,Annotate predicted effect of nucleotide changes with SnpEff,Bradford Powell,0,0,0,0,0,0
-bwa mem samblaster,"Map reads using bwa mem, mark duplicates by samblaster and sort and index by sambamba.",Christopher Schröder,0,0,0,0,0,0
 bwa sampe,Map paired-end reads with bwa sampe.,Julian de Ruiter,0,0,0,0,0,0
 bwa samse,Map single-end reads with bwa samse.,Julian de Ruiter,0,0,0,0,0,0
 bwa index,Creates a BWA index.,Patrik Smeds,0,0,0,0,0,0
 bwa mem,"Map reads using bwa mem, with optional sorting using samtools or picard.",Johannes Köster Julian de Ruiter,0,0,0,0,0,0
 bwa aln,Map reads with bwa aln.,Julian de Ruiter,0,0,0,0,0,0
-Strelka germline,Call germline variants with Strelka.,Jan Forster,0,0,0,0,0,0
-Strelka,"Strelka calls somatic and germline small variants from mapped sequencing reads
-",Thibault Dayris,0,0,0,0,0,0
 trimmomatic se,Trim single-end reads with trimmomatic. (De)compress with pigz.,Johannes Köster Jorge Langa,0,0,0,0,0,0
 trimmomatic pe,Trim paired-end reads with trimmomatic. (De)compress with pigz.,Johannes Köster Jorge Langa,0,0,0,0,0,0
-plass,Plass (Protein-Level ASSembler) is software to assemble short read sequencing data on a protein level. The main purpose of Plass is the assembly of complex metagenomic datasets.,N. Tessa Pierce,0,0,0,0,0,0
-star,Map reads with STAR.,Johannes Köster Tomás Di Domenico,0,0,0,0,0,0
-STAR Index,Index fasta sequences with STAR,Thibault Dayris Tomás Di Domenico,0,0,0,0,0,0
-SnpSift varType,Add an INFO field denoting variant type.,Thibault Dayris,0,0,0,0,0,0
-hmmbuild,hmmbuild: construct profile HMM(s) from multiple sequence alignment(s),N Tessa Pierce,0,0,0,0,0,0
-hmmpress,Format an HMM database into a binary format for hmmscan.,N Tessa Pierce,0,0,0,0,0,0
-hmmscan,search protein sequence(s) against a protein profile database,N Tessa Pierce,0,0,0,0,0,0
-hmmsearch,search profile(s) against a sequence database,N Tessa Pierce,0,0,0,0,0,0
+star,Map reads with STAR.,Johannes Köster,0,0,0,0,0,0
+compress vcf,Compress and index vcf file with bgzip and tabix.,Johannes Köster,0,0,0,0,0,0
+uncompress vcf,Uncompress vcf file with bgzip.,Johannes Köster,0,0,0,0,0,0
 trim_galore-se,"Trim unpaired reads using trim_galore.
 ",Kerrin Mendler,0,0,0,0,0,0
 trim_galore-pe,"Trim paired-end reads using trim_galore.
 ",Kerrin Mendler,0,0,0,0,0,0
-filtlong,Quality filtering tool for long reads.,Michael Hall,0,0,0,0,0,0
 epic,"Find broad enriched domains in ChIP-Seq data with epic
 ",Endre Bakken Stovner,0,0,0,0,0,0
 sourmash_compute,"Build a MinHash signature for a transcriptome, genome, or reads 
@@ -180,12 +110,7 @@ detects recurrent copy number alterations using copy number breaks.
 ngs-disambiguate,"Disambiguation algorithm for reads aligned to two species (e.g. human
 and mouse genomes) from Tophat, Hisat2, STAR or BWA mem.
 ",Julian de Ruiter,0,0,0,0,0,0
-coverageBed,Returns the depth and breadth of coverage of features from B on the intervals in A.,Patrik Smeds,0,0,0,0,0,0
-bedtools intersect,Intersect BED/BAM/VCF files with bedtools.,Jan Forster,0,0,0,0,0,0
-bedtools merge,Merge entries in one or multiple BED/BAM/VCF/GFF files with bedtools.,Jan Forster,0,0,0,0,0,0
-bedtools slop,Increase the size of each feature in a BED/BAM/VCF by a specified factor.,Jan Forster,0,0,0,0,0,0
 delly,Call variants with delly.,Johannes Köster,0,0,0,0,0,0
-refgenie,Deploy biomedical reference datasets via refgenie.,Johannes Köster,0,0,0,0,0,0
 gatk CombineGVCFs,"Run gatk CombineGVCFs.
 ",Johannes Köster Jake VanCampen,0,0,0,0,0,0
 gatk VariantFiltration,"Run gatk VariantFiltration.
@@ -194,11 +119,8 @@ gatk VariantRecalibrator,"Run gatk VariantRecalibrator.
 ",Johannes Köster Jake VanCampen,0,0,0,0,0,0
 gatk GenotypeGVCFs,"Run gatk GenotypeGVCFs.
 ",Johannes Köster Jake VanCampen,0,0,0,0,0,0
-gatk SplitNCigarReads,"Run gatk SplitNCigarReads.
-",Jan Forster,0,0,0,0,0,0
 gatk HaplotypeCaller,"Run gatk HaplotypeCaller.
 ",Johannes Köster Jake VanCampen,0,0,0,0,0,0
-GATK Mutect2,Call somatic SNVs and indels via local assembly of haplotypes,Thibault Dayris,0,0,0,0,0,0
 gatk SelectVariants,"Run gatk SelectVariants.
 ",Johannes Köster Jake VanCampen,0,0,0,0,0,0
 gatk BaseRecalibrator,"Run gatk BaseRecalibrator and ApplyBQSR in one step.
@@ -207,38 +129,18 @@ fastqc,"Generate fastq qc statistics using fastqc.
 ",Julian de Ruiter,0,0,0,0,0,0
 pindel,Call variants with pindel.,Johannes Köster,0,0,0,0,0,0
 pindel2vcf,Convert pindel output to vcf.,Johannes Köster,0,0,0,0,0,0
-kallisto quant,Pseudoalign reads and quantify transcripts using kallisto.,Joël Simoneau,0,0,0,0,0,0
-kallisto index,Index a transcriptome using kallisto.,Joël Simoneau,0,0,0,0,0,0
 samtools bam2fq interleaved,"Convert a bam file back to unaligned reads in a single fastq file with samtools. For paired end reads, this results in an unsorted interleaved file.",David Laehnemann Victoria Sack,0,0,0,0,0,0
 samtools bam2fq separate,"Convert a bam file with paired end reads back to unaligned reads in a two separate fastq files with samtools. Reads that are not properly paired are discarded (READ_OTHER and singleton reads in samtools bam2fq documentation), as are secondary (0x100) and supplementary reads (0x800).",David Laehnemann Victoria Sack,0,0,0,0,0,0
-samtools fixmate,Use samtools to correct mate information after BWA mapping.,Thibault Dayris,0,0,0,0,0,0
 samtools sort,Sort bam file with samtools.,Johannes Köster,0,0,0,0,0,0
 samtools merge,Merge two bam files with samtools.,Johannes Köster,0,0,0,0,0,0
 samtools mpileup,Generate pileup using samtools.,Patrik Smeds,0,0,0,0,0,0
-samtools faidx,index reference sequence in FASTA format from reference sequence,Michael Chambers,0,0,0,0,0,0
 samtools view,Convert or filter SAM/BAM.,Johannes Köster,0,0,0,0,0,0
 samtools index,Index bam file with samtools.,Johannes Köster,0,0,0,0,0,0
 samtools flagstat,Use samtools to create a flagstat file from a bam or sam file.,Christopher Preusch,0,0,0,0,0,0
 samtools stats,Generate stats using samtools.,Julian de Ruiter,0,0,0,0,0,0
-pyfastaq replace_bases,Replaces all occurrences of one letter with another.,Michael Hall,0,0,0,0,0,0
-snp-mutator,Generate mutated sequence files from a reference genome.,Michael Hall,0,0,0,0,0,0
 jannovar,Annotate predicted effect of nucleotide changes with Jannovar,Bradford Powell,0,0,0,0,0,0
-sra-tools fasterq-dump,Download FASTQ files from SRA.,Johannes Köster,0,0,0,0,0,0
 lofreq call,simply call variants,Patrik Smeds,0,0,0,0,0,0
-clustalo,Multiple alignment of nucleic acid and protein sequences.,Michael Hall,0,0,0,0,0,0
-gatk3 IndelRealigner,"Run gatk3 IndelRealigner
-",Patrik Smeds,0,0,0,0,0,0
-gatk3 RealignerTargetCreator,"Run gatk3 RealignerTargetCreator
-",Patrik Smeds,0,0,0,0,0,0
-gatk3 BaseRecalibrator,"Run gatk3 BaseRecalibrator.
-",Patrik Smeds,0,0,0,0,0,0
-gatk3 PrintReads,"Run gatk3 PrintReads
-",Patrik Smeds,0,0,0,0,0,0
-ensembl-variation,"Download known genomic variants from ENSEMBL FTP servers, and store them in a single .vcf.gz file.",Johannes Köster,0,0,0,0,0,0
-ensembl-sequence,"Download sequences (e.g. genome) from ENSEMBL FTP servers, and store them in a single .fasta file.",Johannes Köster,0,0,0,0,0,0
-ensembl-annotation,"Download annotation of genomic sites (e.g. transcripts) from ENSEMBL FTP servers, and store them in a single .gtf or .gff3 file.",Johannes Köster,0,0,0,0,0,0
 freebayes,Call small genomic variants with freebayes.,Johannes Köster,0,0,0,0,0,0
-fastp,trim and QC fastq reads with fastp,Sebastian Kurscheid (sebastian.kurscheid@anu.edu.au),0,0,0,0,0,0
 salmon_quant,"Quantify transcripts with salmon 
 ",Tessa Pierce,0,0,0,0,0,0
 salmon_index,"Index a transcriptome assembly with salmon 
